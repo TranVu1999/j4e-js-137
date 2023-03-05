@@ -1,0 +1,10 @@
+.header {
+    padding: 16px 75px;
+    z-index: 10;
+}
+
+.header .header__logo {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}

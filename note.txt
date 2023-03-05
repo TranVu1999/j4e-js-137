@@ -1,0 +1,17 @@
+/*
+    1. Position:
+        - position
+        - top, right, bottom left
+
+    2. Box model
+        - diplay
+        - margin, padding
+        - width, height
+
+    3. Color
+        - color, font (font-weight, font-style),
+        - background-color
+
+    4. còn lại
+        - border, box-shadow, z-index
+*/

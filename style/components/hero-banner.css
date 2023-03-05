@@ -1,0 +1,26 @@
+.hero-banner {
+    min-height: calc(100vh);
+    background-image: url(./../../assets/banner/banner_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-banner .mask {
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.hero-banner .hero-banner__content {
+    padding: 100px 100px;
+}
+
+.hero-banner .hero-banner__content button {
+    width: 120px;
+    border: 1px solid white;
+}
+
+.hero-banner .hero-banner__content .title {
+    font-size: 48px;
+}
