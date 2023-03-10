@@ -8,3 +8,35 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
+
+.header .header__navigation li{
+    display: inline-block;
+    /* margin-left: 16px;
+    margin-right: 16px; */
+    padding: 8px 24px;
+    border-radius: 25px;
+    /* border-radius: 25px 25px 25px 25px; */
+}
+
+.header .header__navigation li.highlight,
+.header .header__navigation .navigation>li:hover {
+    background-color: #007bff;
+}
+
+.header .header__navigation .sub-menu {
+    top: calc(100% + 14px);
+    left: 0;
+
+    display: none;
+    min-width: 100%;
+    background-color: white;
+    color: gray;
+}
+
+.header .header__navigation li:hover .sub-menu {
+    display: block;
+}
+
+.header .header__navigation .sub-menu li {
+    display: block;
+}
