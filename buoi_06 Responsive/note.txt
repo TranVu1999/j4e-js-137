@@ -1,0 +1,22 @@
+Shopee:
+1. User: UI + responsive + JS
+-- Yến
+-- Khôi
+-- Huy
+-- Trúc
+
+
+2. Agent: UI + Logic (JS)
+-- Khánh
+-- Duy
+-- Hưng
+
+
+3. Admin: Logic (JS)
+-- Sơn
+-- Lộc
+-- Khoa
+
+
+
+
