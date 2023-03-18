@@ -1,0 +1,26 @@
+/* Block */
+.header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    background-color: grey;
+}
+
+/* Block__Element */
+.header__left {
+    width: 300px;
+    min-height: 100px;
+    background-color: yellow;
+}
+
+/* BEM */
+/* Block__Element--Modify */
+.header__left--green {
+    background-color: green;
+}
+
+.header__right {
+    width: 300px;
+    min-height: 100px;
+    background-color: red;
+}
