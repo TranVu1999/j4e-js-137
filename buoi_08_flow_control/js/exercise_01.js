@@ -8,24 +8,27 @@
 console.log("------------------------------");
 console.log("Using For statement");
 const N = 10;
-for (let i = 1; i <= N; i++) {
-    console.log(i);
-}
 
-console.log("------------------------------");
-console.log("Using While statement");
-let step = 1;
-while (step <= N) {
-    console.log(step);
-    step++;
-}
+// for (let i = 1; i <= N; i = i + 2) {
+//     console.log(i);
+// }
 
-console.log("------------------------------");
+// console.log("------------------------------");
+// console.log("Using While statement");
+
+// let step = 1;
+// while (step <= N) {
+//     console.log(step);
+//     step++;
+// }
+
+// console.log("------------------------------");
 console.log("Using Do While statement");
 let step2 = 0;
 do {
-    step2++;
     console.log(step2);
+    step2++;
+
 } while (step2 < N); // why??
 
 // More questions:

@@ -9,7 +9,7 @@
  console.log("Using For statement");
  const N = 10;
 //  for (let i = 1; i <= N; i++) {
-for (let i = N; i > 0; i = i - 1) {
+for (let i = N; i > 1; i = i - 1) {
     console.log(i);
 }
 
