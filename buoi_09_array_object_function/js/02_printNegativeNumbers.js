@@ -31,6 +31,29 @@ function printNegativeNumbers(arr, n) {
     }
 }
 
-printNegativeNumbers(arr, n);
-console.log("-------------------");
-printNegativeNumbers(arr, 1);
+// printNegativeNumbers(arr, n);
+// console.log("-------------------");
+// printNegativeNumbers(arr, 1);
+
+// arr = [-100, -7, 10, -20, 0, 1, -9, 3, 4, -7, 6, 7, -5, 9, -12, 20];
+// n = 5;
+// let count = 0;
+
+
+// for(let i = 0; i < arr.length; i++) {
+//     if(arr[i] > 0) {
+//         count++;
+//         console.log(arr[i]);
+//     }
+
+//     if (count === 5) {
+//         break;
+//         console.log('inner');
+//     }
+// }
+
+// console.log('outer');
+
+
+
+

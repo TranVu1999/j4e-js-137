@@ -10,20 +10,31 @@
  * Ouput: 20
  */
 
-function getMaxNumber(arr) {
-    if(arr.length > 0) {
-        let max = arr[0];
+// function getMaxNumber(arr) {
+//     if(arr.length > 0) {
+//         let max = arr[0];
 
-        for(let i = 1; i < arr.length; i++) {
-            if(arr[i] > max) {
-                max = arr[i];
-            }
-        }
+//         for(let i = 1; i < arr.length; i++) {
+//             if(arr[i] > max) {
+//                 max = arr[i];
+//             }
+//         }
 
-        return max;
+//         return max;
+//     }
+
+//     return undefined;
+// }
+// console.log("-----------------");
+// console.log('result: ', getMaxNumber(arr));
+
+arr = [-7, -10, -20, 0, 100, 1, 2, 3, 4, -100, 5, 6, 7, 8, 9, 10, 20];
+let max = arr[0];
+
+for(let i = 1; i < arr.length; i++) {
+    if(arr[i] > max) {
+        max = arr[i];
     }
-
-    return undefined;
 }
-console.log("-----------------");
-console.log('result: ', getMaxNumber(arr));
+
+console.log('max: ', max);
