@@ -42,10 +42,44 @@ function checkPrimeNumber2(number) {
     return flag;
 }
 
-for (let i = 0; i < arr.length; i++) {
-    if(checkPrimeNumber2(arr[i]) === true) {
-        console.log(arr[i]);
+// for (let i = 0; i < arr.length; i++) {
+//     if(checkPrimeNumber2(arr[i]) === true) {
+//         console.log(arr[i]);
+//     }
+// }
+
+// () -> toán tử gọi hàm -> call operator
+
+arr = [-7, 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 20];
+let min1 = Number.POSITIVE_INFINITY;
+let min2 = Number.POSITIVE_INFINITY;
+
+for(let i = 0; i < arr.length; i++) {
+    if(arr[i] < min1) {
+        min2 = min1;
+        min1 = arr[i];
+    } else if(arr[i] < min2) {
+        min2 = arr[i];
     }
 }
 
-// () -> toán tử gọi hàm -> call operator
+console.log('title: ', min2);
+/**
+ *  min1 = duong vo cung
+ *  min2 = duong vo cung
+ *
+ *  i = 0; arr[i] = -7
+ *  (arr[i] = -7 < min1 = duong vo cung) -> true
+ *  min2 = min1 => min2 = duong vo cung
+ *  min1 = arr[i] = min1 = -7
+ *
+ *  i = 1; arr[i] = 0
+ *  (arr[i] = 0 < min1 = -7) -> false
+ *  (arr[i] = 0 < min2 = duong vo cung) -> true
+ *  min2 = arr[i] => min2 = 0
+ *
+ *  i = 2
+ *  ...
+ *
+ * min2 = 0
+ */
