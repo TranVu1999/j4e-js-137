@@ -15,6 +15,3 @@ do {
 } while (temp > 0);
 
 console.log("result: ", result);
-
-
-
