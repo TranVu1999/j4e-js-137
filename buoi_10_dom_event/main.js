@@ -31,12 +31,9 @@ passwordElm.addEventListener('keyup', function(event) {
 
 formLogin.addEventListener('submit', handleLogin);
 
-
-
 function enableSubmitButton() {
     if(userName && password) {
         submitButtonElm.removeAttribute('disabled');
-        console.log('title: ', 'debugger');
     } else {
         submitButtonElm.setAttribute('disabled', true);
     }
@@ -60,3 +57,35 @@ function handleLogin(event) {
         errorMessageElm.innerText = 'Tài khoản/Mật khẩu không đúng! Vui lòng kiểm tra lại';
     }
 }
+
+// callback
+function sum(number1, number2, bien) {
+    const result = number1 + number2;
+    bien(result);
+}
+
+function printResult(number) {
+    console.log("result: ", number)
+}
+function printResult2(number) {
+    console.log("ket qua la: ", number)
+}
+
+sum(1, 2, printResult);
+sum(2, 2, printResult2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
