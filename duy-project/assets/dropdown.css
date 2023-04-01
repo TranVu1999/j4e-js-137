@@ -33,7 +33,7 @@
 .sub-menu :hover .sub-menu-2{
     visibility:visible;
     opacity: 1;
-
+    
 }
 .sub-menu-2{
     padding: 10px 0;
@@ -66,7 +66,7 @@
 
     visibility:visible;
     opacity: 1;
-
+    
 }
 .sub-menu-3-second{
     padding: 10px 0;
@@ -103,7 +103,7 @@
 
     visibility:visible;
     opacity: 1;
-
+    
 }
 .sub-menu-5{
     padding: 10px 0;
@@ -124,7 +124,7 @@
 
     visibility:visible;
     opacity: 1;
-
+    
 }
 .sub-menu-cskh{
     position:absolute;
@@ -142,7 +142,7 @@
 
 }
 
-.navigation:hover .sub-menu-cskh{
+.navigation :hover .sub-menu-cskh{
     opacity: 1;
     visibility: visible;
 

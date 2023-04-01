@@ -34,42 +34,17 @@
 
 // length = 7;
 
-let togiay = 0;
 
-arr = [50, 70, 20, 90, 100, 80, 0];
-
-i = 0; => arr[0] = 50;
-togiay = 50;
-
-i = 1;
-togiay = 70;
-
-i = 2;
-togiay = 70;
-
-i = 3;
-togiay = 90;
-
-i = 4;
-togiay = 100;
-
-i = 5;
-togiay = 100;
-
-i = 6;
-togiay = 100;
-
-=> result = 100;
-
-let result = 0;
+let arr = [2, 3, 4, -100, -30, 6, 7, 8];
 
 for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > result) {
-        
+    for(let j = i + 1; j < arr.length; j++) {
+        if(arr[i] > arr[j]) {
+            const temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
     }
-
-    console.log('title: ', arr[i]);
 }
 
-
-
+console.log('title: ', arr);

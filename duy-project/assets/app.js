@@ -1,19 +1,6 @@
-// let users = [
-//     {userName: 'admin', password: 'admin'}
-// ];
-// // truy cap vao cac o input
-// const $userLogin=document.getElementById('user-login');
-// console.log($userLogin);
-// const $formLogin=document.getElementById('container-form');
-// console.log($formLogin);
-
-// $userLogin.onclick=function(){
-//     $formLogin.style.display="display:block;";
-// }
-
-
 const btnCloseModalElm = document.getElementById('btnCloseModal');
 const formLoginElm = document.getElementById('formLogin');
+console.log(formLoginElm)
 const modalElm = document.getElementById('modal');
 const containerFormElm = document.getElementById('containerForm');
 
@@ -34,6 +21,15 @@ containerFormElm.addEventListener('click', function(event) {
 });
 
 
+const btnDangKy=document.getElementById('btnDangKy');
+console.log(btnDangKy);
+
+const modalDangKy=document.getElementById('modal-dangky');
+console.log(modalDangKy)
+
+modalDangKy.addEventListener('onclick',function(){
+btnDangKy.style.display='block';
+});
 
 
 
