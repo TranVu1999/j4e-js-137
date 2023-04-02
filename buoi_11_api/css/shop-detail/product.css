@@ -1,0 +1,129 @@
+/* ========== Product Detail ==========*/
+.product-detail{
+    margin: 3.75rem 0;
+}
+
+.product-detail__container{
+    gap: 1.875rem;
+}
+
+.product-detail__thumbnail,
+.product-detail__text{
+    flex: 1;
+}
+
+.product-detail__head{
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.product-detail__head>div{
+    align-items: flex-end;
+    margin-bottom: .5rem;
+}
+
+.product-detail__head h1{
+    margin-right: .75rem;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    line-height: 2.125rem;
+}
+
+.product-detail__head span{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+}
+
+.product-detail__head .rating{
+    margin-right: 1rem;
+}
+
+.product-detail__head .rating i{
+    font-size: .75rem;
+    color: var(--secondary-color);
+}
+
+.product-detail__head .review span{
+    font-size: .875rem;
+    color: #7d7d7d;
+}
+
+.product-detail__short-description{
+    margin-bottom: 1.5rem;
+    font-size: .875rem;
+}
+
+.product-detail__short-description div{
+    margin-top: 1rem;
+}
+
+.product-detail__text .label{
+    margin-right: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.product-detail__text .control-number{
+    display: flex;
+    margin-bottom: 2rem;
+    border: 1px solid #e1e1e1;
+}
+
+.product-detail__text .control-number .result{
+    height: 3.75rem;
+    width: 3.75rem;
+    text-align: center;
+    line-height: 3.75rem;
+    border-right: 1px solid #e1e1e1;
+}
+
+.product-detail__text .control-number .button{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1.875rem;
+}
+
+.product-detail__text .control-number .button button:first-child{
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.product-detail__text .control-number .button button{
+    width: 100%;
+}
+
+.product-detail__button-control button{
+    min-width: initial;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0;
+}
+
+.product-detail__button-control button:first-child{
+    margin-right: .5rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.product-detail__social{
+    color: var(--primary-color);
+}
+
+.product-detail__social a{
+    margin-right: 1rem;
+}
+
+
+/* ========== Product Description ==========*/
+.product-description{
+    margin-bottom: 3.75rem;
+}
+
+.product-description__container{
+    font-size: .875rem;
+    line-height: 1.5rem;
+}
+
+.product-description__container p{
+    margin-bottom: 1.125rem;
+}

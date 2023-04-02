@@ -1,0 +1,163 @@
+.hero{
+    position: relative;
+}
+
+.hero__container{
+    position: relative;
+    letter-spacing: -5px;
+    white-space: nowrap;
+}
+
+.hero .slider__item{
+    position: relative;
+
+    display: inline-block;
+    padding: 11.5rem 0;
+    width: 100vw;
+
+    background-image: url('./../../assets/images/backgrounds/slider1.png');
+    background-color: var(--primary-color);
+    background-size: cover;
+    color: var(--light-color);
+
+    white-space: normal;
+    letter-spacing: initial;
+    transition: all .8s cubic-bezier(.71,-0.18,.25,1.34);
+
+}
+
+.hero .slider__item:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 0;
+}
+
+.hero .slider__item .container{
+    position: relative;
+    z-index: 1;
+}
+
+.hero .slider__text p{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.hero .slider__buttons button{
+    margin-right: .5rem;
+}
+
+.hero .slider__dots{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.hero .slider__dots button{
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    margin-right: .5rem;
+
+    background-color: var(--light-color);
+    border-radius: 50%;
+    opacity: .4;
+}
+
+.hero .slider__dots button.active{
+    opacity: 1;
+}
+
+
+/* ================ Responsive ================*/
+@media screen and (min-width: 320px){
+    .hero .slider__item{
+        padding: 2.5rem 0;
+        min-height: 420px;
+    }
+
+    .hero .slider__text{
+        width: 100%;
+        margin-bottom: 3.25rem;
+    }
+
+    .hero .slider__text h1{
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+
+    .hero .slider__buttons button{
+        min-width: 10rem;
+    }
+
+    .hero .slider__buttons button:first-child{
+        display: none;
+    }
+
+    .hero .slider__dots{
+        bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .hero .slider__buttons{
+        margin-bottom: 1.5rem;
+    }
+
+    .hero .slider__dots{
+        bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 767px){
+
+    .hero .slider__item{
+        padding: 5.5rem 0;
+    }
+
+    .hero .slider__text{
+        max-width: 70%;
+        margin-bottom: 4.25rem;
+    }
+
+    .hero .slider__text h1{
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    
+}
+
+@media screen and (min-width: 1025px){
+    .hero .slider__item{
+        padding: 11.5rem 0;
+    }
+
+    .hero .slider__text h1{
+        font-size: 5.625rem;
+        font-weight: 600;
+        line-height: 6.25rem;
+    }
+
+    .hero .slider__buttons button:first-child{
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1199px){
+    
+}
+
+
+
+
+
+

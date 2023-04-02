@@ -1,0 +1,72 @@
+.add-review{
+    margin-bottom: 3.75rem;
+}
+
+.add-review .title{
+    margin-bottom: 1.5rem;
+}
+
+.add-review .rating{
+    margin-bottom: 1rem;
+}
+
+.add-review .rating span{
+    margin-right: 1.5rem;
+}
+
+.add-review .rating i{
+    font-size: .75rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+/* ============== Form Review ============== */
+
+.form-review>div{
+    gap: 1.875rem;
+}
+
+.form-review .input-group{
+    flex: 1;
+    margin-bottom: 1rem;
+    padding: .875rem 1.5rem;
+    background-color: #f6f6f6;
+}
+
+.form-review button{
+    padding: .9375rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+
+
+/* ================ Responsive ================*/
+@media screen and (min-width: 320px){
+    .form-review>div{
+        display: block;
+    }
+
+    .form-review .input-group{
+        padding: .875rem 1rem;
+    }
+
+    .form-review .input-group textarea{
+        height: 6rem;
+    }
+}
+
+@media screen and (min-width: 480px){
+    
+}
+
+
+@media screen and (min-width: 768px){
+    
+}
+
+@media screen and (min-width: 1023px){
+    .form-review>div{
+        display: flex;
+    }
+}

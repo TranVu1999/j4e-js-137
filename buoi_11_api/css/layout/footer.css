@@ -1,0 +1,221 @@
+.footer__container{
+    position: relative;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+.footer__container .overlay{
+    position: absolute;
+    bottom: -80%;
+    left: 0;
+
+    width: 100%;
+    height: 150%;
+    background-image: url('./../../assets/images/backgrounds/footer.png');
+    background-position: center bottom;
+    background-size: contain;
+
+    z-index: 0;
+}
+
+.footer__container .container>.d-flex{
+    gap: 3.5rem;
+}
+
+.footer__widget {
+    font-size: .875rem;
+}
+
+.footer__widget .title{
+    margin-bottom: 1.875rem;
+    font-size: 1.25rem;
+    color: var(--light-color);
+}
+
+.footer__widget p.description{
+    margin-bottom: 2rem;
+}
+
+.footer__widget button.btn{
+    padding: 1rem 1.5rem;
+    min-width: 140px;
+    text-transform: inherit;
+}
+
+.footer__widget .links li{
+    margin-bottom: 1rem;
+}
+
+.footer__widget .links li a{
+    padding-bottom: .25rem;
+    border-bottom: 2px solid transparent;
+}
+
+.footer__widget .links li a.active{
+    border-bottom-color: var(--secondary-color);
+}
+
+.footer__widget i{
+    font-size: 1rem;
+}
+
+.footer__widget .contacts li{
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.footer__widget .contacts li:last-child{
+    border: none;
+}
+
+.footer__widget .contacts li a{
+    display: flex;
+    align-items: center;
+    padding-bottom: .25rem;
+}
+
+.footer__widget .contacts li i{
+    margin-right: .5rem;
+    color: var(--secondary-color);
+}
+
+.footer__widget form{
+    margin: 1.5rem 0;
+    background-color: var(--light-color);
+}
+
+.footer__widget form{
+    padding: 1rem 1.5rem;
+}
+
+.footer__widget form button{
+    color: var(--secondary-color);
+}
+
+.footer__widget .socials a{
+    margin-right: 1.5rem;
+    color: var(--light-color);
+}
+
+
+/* ================ Copyright ================*/
+.footer .copyright{
+    padding: 2rem 0;
+    font-size: .75rem;
+    background-color: #171717;
+}
+
+.footer .copyright p span{
+    color: var(--secondary-color);
+}
+
+.footer .copyright nav a{
+    margin-right: .5rem;
+}
+
+.footer .copyright nav a:not(:last-child):after{
+    content: '/';
+    margin-left: .5rem;
+}
+
+
+/* ================ Responsive ================*/
+
+@media screen and (min-width: 320px){
+    .footer__container .overlay{
+        display: none;
+    }
+
+    .footer__container .container>.d-flex{
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .footer__widget{
+        margin-bottom: 2rem;
+        flex-basis: 100%;
+    }
+
+    .footer__widget:nth-child(4){
+        padding-left: 0;
+    }
+
+    .footer__widget .contacts li{
+        margin-bottom: 1.5rem;
+    }
+
+    .footer .copyright nav{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .footer__widget:nth-child(1),
+    .footer__widget:nth-child(2){
+        flex-basis: 45%;
+    }
+
+    .footer__widget button.btn{
+        padding: 1rem 1rem;
+        font-size: .875rem;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .footer__container .overlay{
+        display: none;
+    }
+
+    .footer__container .container>.d-flex{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .footer__widget{
+        flex-basis: 45%;
+    }
+
+    .footer__widget:nth-child(4){
+        padding-left: 0;
+    }
+
+    .footer__widget .contacts li{
+        margin-bottom: 1.5rem;
+    }
+
+    .footer .copyright nav{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    .footer__container .container>.d-flex{
+        flex-wrap: nowrap;
+    }
+    
+    .footer__widget:nth-child(1){
+        flex-basis: 20%;
+    }
+    .footer__widget:nth-child(2){
+        flex-basis: 20%;
+    }
+    .footer__widget:nth-child(3),
+    .footer__widget:nth-child(4){
+        flex-basis: 30%;
+    }
+    
+    .footer__widget:nth-child(3){
+        padding-right: 2rem;
+    }
+    
+    .footer__widget:nth-child(4){
+        padding-left: 2rem;
+    }
+
+    .footer__widget .contacts li{
+        margin-bottom: 1.5rem;
+    }
+}
+

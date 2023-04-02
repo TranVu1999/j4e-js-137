@@ -1,0 +1,32 @@
+.company-logos{
+    background-color: #f6f6f6;
+}
+
+/* ================ Responsive ================*/
+@media screen and (min-width: 320px){
+    .company-logos{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px){
+
+}
+
+@media screen and (min-width: 768px){
+    
+}
+
+@media screen and (min-width: 992px){
+    .company-logos{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    
+}
+
+@media screen and (min-width: 1200px){
+    
+}

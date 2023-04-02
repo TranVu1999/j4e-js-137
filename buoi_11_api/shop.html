@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+
+    <!-- Link -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/layout/header.css">
+    <link rel="stylesheet" href="./css/layout/banner.css">
+    <link rel="stylesheet" href="./css/layout/sidebar.css">
+
+    <link rel="stylesheet" href="./css/shop/shop.css">
+
+    <link rel="stylesheet" href="./css/layout/footer.css">
+
+
+</head>
+<body>
+    <!-- 2h -->
+    <div class="main-wrapper">
+        <!-- Start Header -->
+        <header class="header">
+            <div class="header--top">
+                <div class="d-flex align-items-center justify-content-between container">
+                    <div class="d-flex header--top__left">
+                        <div>
+                            <i class="fas fa-phone"></i>
+                            92 666 888 0000
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            needhelp@company.com
+                        </div>
+                        <div>
+                            <i class="fas fa-clock"></i>
+                            Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+                        </div>
+                    </div>
+                    <div class="header--top__right">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header--bottom">
+                <div class="d-flex align-items-center justify-content-between container">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./assets/images/logos/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <nav class="header__nav">
+                        <ul>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="d-flex align-items-center header__control">
+                        <button><img src="./assets/images/icons/search.png" alt="search"></button>
+
+                        <div class="position-relative ml-3 cart">
+                            <divc class="cursor-pointer">
+                                <img src="./assets/images/icons/cart.png" alt="cart">
+                                <span class="cart__number">4</span>
+                            </divc>
+                            <div class="position-absolute py-3 car__detail">
+                                <ul id="carDetail">
+                                    <li class="d-flex product">
+                                        <div class="mr-3 product__thumbnail">
+                                            <img src="./assets/images/products/1.png" alt="">
+                                        </div>
+                                        <div class="product__title">
+                                            <a href="#" class="fw-bold">Classic Chair</a>
+                                            <p>$33.00 <span>x 1</span> </p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex product">
+                                        <div class="mr-3 product__thumbnail">
+                                            <img src="./assets/images/products/1.png" alt="">
+                                        </div>
+                                        <div class="product__title">
+                                            <a href="#" class="fw-bold">Classic Chair</a>
+                                            <p>$33.00 <span>x 1</span> </p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex product">
+                                        <div class="mr-3 product__thumbnail">
+                                            <img src="./assets/images/products/1.png" alt="">
+                                        </div>
+                                        <div class="product__title">
+                                            <a href="#" class="fw-bold">Classic Chair</a>
+                                            <p>$33.00 <span>x 1</span> </p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="mx-3 pt-3 d-flex align-items-center justify-content-between cart__summary">
+                                    <button class="btn-checkout">Checkout</button>
+                                    <p class="fw-bold total">$132.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Banner -->
+        <section class="banner">
+            <div class="container">
+                <div class="banner__container">
+                    <h1 class="title-page">Shop</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End Banner -->
+
+        <!-- Start Shop -->
+        <section class="section-padding shop">
+            <div class="container">
+                <div class="shop__container">
+                    <div class="shop__sidebar sidebar">
+                        <form action="" class="form-search">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <input type="text" placeholder="Search">
+                                <button><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+
+                        <div class="widget__item">
+                            <div class="title">Price</div>
+
+                            <div class="widget-process">
+                                <div class="prcess-bar">
+                                    <div class="line" style="width: 50%;"><button class="button"></button></div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center process-value">
+                                        <span class="from">$50</span>
+                                        <span class="delimiter"></span>
+                                        <span class="to">$550</span>
+                                    </div>
+
+                                    <div class="process-button">
+                                        <button>Filter</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="widget__item">
+                            <div class="title">Categories</div>
+
+                            <ul class="categories">
+                                <li class="category__item active">
+                                    <a href="#">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Construction
+                                    </a>
+                                </li>
+
+                                <li class="category__item">
+                                    <a href="#">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Industial Materials
+                                    </a>
+                                </li>
+
+                                <li class="category__item">
+                                    <a href="#">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Engineering
+                                    </a>
+                                </li>
+
+                                <li class="category__item">
+                                    <a href="#">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Building Plans
+                                    </a>
+                                </li>
+
+                                <li class="category__item">
+                                    <a href="#">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Rennovations
+                                    </a>
+                                </li>
+
+                                <li class="category__item">
+                                    <a href="#">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Civil Engineering
+                                    </a>
+
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="shop__content">
+                        <div class="shop__filter">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>Showing 1 - 9 of 12 results</div>
+
+                                <div class="widget-select-box">
+                                    <div class="select__result">
+                                        <span>Sort by Popular</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="seclect__options">
+                                        <div class="option__item">Sort by Popular</div>
+                                        <div class="option__item">Sort by Price</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop__products">
+                            <div class="product__item">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/products/1.png" alt="product">
+                                    <div class="overlay">
+                                        <button onclick="addToCart(1)">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="text-center text">
+                                    <h5 class="title">Classic Chair</h5>
+                                    <span class="price">$33.00</span>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/products/2.png" alt="product">
+                                    <div class="overlay">
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="text-center text">
+                                    <h5 class="title">Classic Chair</h5>
+                                    <span class="price">$33.00</span>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/products/3.png" alt="product">
+                                    <div class="overlay">
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="text-center text">
+                                    <h5 class="title">Classic Chair</h5>
+                                    <span class="price">$33.00</span>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/products/4.png" alt="product">
+                                    <div class="overlay">
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="text-center text">
+                                    <h5 class="title">Classic Chair</h5>
+                                    <span class="price">$33.00</span>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/products/5.png" alt="product">
+                                    <div class="overlay">
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="text-center text">
+                                    <h5 class="title">Classic Chair</h5>
+                                    <span class="price">$33.00</span>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/products/6.png" alt="product">
+                                    <div class="overlay">
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="text-center text">
+                                    <h5 class="title">Classic Chair</h5>
+                                    <span class="price">$33.00</span>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/products/7.png" alt="product">
+                                    <div class="overlay">
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="text-center text">
+                                    <h5 class="title">Classic Chair</h5>
+                                    <span class="price">$33.00</span>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/products/8.png" alt="product">
+                                    <div class="overlay">
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="text-center text">
+                                    <h5 class="title">Classic Chair</h5>
+                                    <span class="price">$33.00</span>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="thumbnail">
+                                    <img src="./assets/images/products/9.png" alt="product">
+                                    <div class="overlay">
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="text-center text">
+                                    <h5 class="title">Classic Chair</h5>
+                                    <span class="price">$33.00</span>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Shop -->
+
+        <!-- Start Footer -->
+        <footer class="footer">
+            <div class="section-padding footer__container">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="d-flex">
+                        <div class="footer__widget">
+                            <h5 class="title">About</h5>
+
+                            <p class="description">There are many variations of simple lorem ipsum available for not, but the majority have suffered alteration.</p>
+                            <button class="btn btn-primary">Request a Quote</button>
+                        </div>
+
+                        <div class="footer__widget">
+                            <h5 class="title">Links</h5>
+
+                            <ul class="links">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#" class="active">Meet Our Team</a></li>
+                                <li><a href="#">News & Media</a></li>
+                                <li><a href="#">Our Projects</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__widget">
+                            <h5 class="title">Contact</h5>
+
+                            <ul class="contacts">
+                                <li><a href="#">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    88 Broklyn Golden Street, New York
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="fa fa-clock"></i>
+                                    Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="fa fa-envelope"></i>
+                                    needhelp@company.com
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="fa fa-phone-alt"></i>
+                                    92 666 888 0000
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__widget">
+                            <h5 class="title">Newsletter</h5>
+
+                            <p>There are many variations of simple lorem ipsum available for not.</p>
+
+                            <form>
+                                <div class="d-flex">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fa fa-arrow-right"></i></button>
+                                </div>
+                            </form>
+
+                            <div class="socials">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <p>© All Copyright 2020 by <span>Company.com</span></p>
+                        <nav>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Sitemap</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+    </div>
+
+    <!-- <script src="./js/cart.js"></script> -->
+</body>
+</html>

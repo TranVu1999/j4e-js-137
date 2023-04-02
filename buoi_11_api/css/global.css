@@ -1,0 +1,241 @@
+.container{
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+/* ================= Section Title =================*/
+.section-title{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.section-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 3.125rem;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.section-title.text-center:after{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-title span{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: .125rem;
+}
+
+.section-title.light span{
+    color: rgba(255, 255, 255, .8);
+}
+
+.section-title h1{
+    color: var(--primary-color);
+}
+
+.section-title.light h1{
+    color: var(--light-color);
+}
+
+/* ================= Button =================*/
+.btn{
+    min-width: 12rem;
+    padding: 1.125rem 0;
+
+    text-align: center;
+    font-size: .875rem;
+    text-transform: uppercase;
+    background-color: var(--light-color);
+    color: var(--primary-color);
+
+    border-radius: 4px;
+}
+
+
+.btn.btn-primary{
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+
+/* ================= Text =================*/
+.text-center{
+    text-align: center;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+
+/* ================= Slider =================*/
+.slider{
+    position: relative;
+}
+
+.slider .slider__container{
+    margin-bottom: 3rem;
+}
+
+.slider .slider__dots button{
+    display: inline-block;
+    height: .75rem;
+    width: .75rem;
+    margin-right: .5rem;
+    background-color: var(--primary-color);
+
+    border-radius: 50%;
+    opacity: .3;
+}
+
+.slider .slider__dots button.active{
+    opacity: 1;
+}
+
+/* ================= Spacing =================*/
+.ml-3 {
+    margin-left: 16px;
+}
+.ml-5 {
+    margin-left: 32px;
+}
+
+.mr-3 {
+    margin-right: 16px;
+}
+
+.mx-3 {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.pt-3 {
+    padding-top: 16px;
+}
+
+.px-3 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.py-3 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+/* ================= Cursor =================*/
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* ================= Position =================*/
+.position-absolute {
+    position: absolute
+}
+
+.position-relative {
+    position: relative
+}
+
+
+
+/* ================ Responsive ================*/
+@media screen and (min-width: 320px){
+    .container{
+        width: 280px;
+    }
+
+    .section-padding{
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+    }
+
+    .section-title h1{
+        font-size: 2.125rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .container{
+        width: 420px;
+    }
+}
+
+@media screen and (min-width: 767px){
+    .container{
+        width: 568px;
+    }
+
+    .section-title h1{
+        font-size: 2.625rem;
+        line-height: 3rem;
+    }
+}
+
+@media screen and (min-width: 991px){
+    .container{
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    .container{
+        width: 900px;
+    }
+
+    .section-padding{
+        padding-top: 7.375rem;
+        padding-bottom: 7.375rem;
+    }
+
+    .section-title h1{
+        font-size: 3.125rem;
+        line-height: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 1199px){
+    .container{
+        width: 1170px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

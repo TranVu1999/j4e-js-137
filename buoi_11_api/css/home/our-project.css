@@ -1,0 +1,140 @@
+
+
+.project__item{
+    position: relative;
+    flex-basis: 25%;
+    border-radius: .25rem;
+    overflow: hidden;
+}
+
+.project__item:first-child{
+    border-radius: 0 .25rem .25rem 0;
+}
+.project__item:last-child{
+    border-radius: .25rem 0 0 .25rem;
+}
+
+.project__item .thumbnail{
+    height: 37.5rem;
+}
+
+.project__item .thumbnail img{
+    height: 100%;
+}
+
+.project__item .overlay{
+    position: absolute;
+    top: 32px;
+    right: 0;
+    left: 32px;
+    bottom: 32px;
+
+    transform: translateX(100%);
+    transition: all .5s ease-in;
+    padding: 2.5rem 2.5rem;
+    background-color: rgba(0,0,0,.7);
+    border-radius: .25rem;
+}
+
+.project__item:hover .overlay{
+    transform: translateX(0)!important;
+}
+
+.project__item .overlay .title{
+    margin-bottom: 2rem;
+}
+
+.project__item .overlay .title span{
+    font-style: 1rem;
+}
+
+.project__item .overlay .title h5{
+    font-size: 1.875rem;
+    color: var(--light-color);  
+    line-height: 2rem;
+}
+
+.project__item .overlay p{
+    font-size: .9375rem;
+}
+
+
+/* ================ Responsive ================*/
+@media screen and (min-width: 320px){
+
+    .recent-projects__container>.d-flex{
+        flex-wrap: wrap;
+        gap: .0625rem;
+    }
+
+    .project__item{
+        flex-basis: 100%;
+    }
+
+    .project__item .thumbnail{
+        height: 28rem;
+    }
+
+    .project__item:nth-child(1) .overlay,
+    .project__item:nth-child(3) .overlay{
+        transform: translateX(-100%);
+        left: initial;
+        right: 32px;
+    }
+
+    .project__item .overlay{
+        padding: 1.5rem;
+    }
+
+    .project__item .overlay p{
+        height: 13.5rem;
+        line-height: 1.5rem;
+        word-break: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -ms-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-line-clamp: 9;
+        -moz-line-clamp: 9;
+        -ms-line-clamp: 9;
+        line-clamp: 9;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .project__item{
+        flex-basis: 49%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+}
+
+@media screen and (min-width: 992px){
+    
+}
+
+@media screen and (min-width: 1023px){
+    .recent-projects__container>.d-flex{
+        flex-wrap: nowrap;
+    }
+    .project__item{
+        flex-basis: 25%;
+    }
+
+    .project__item:nth-child(1) .overlay,
+    .project__item:nth-child(3) .overlay{
+        right: inherit;
+        left: 32px;
+        transform: translateX(100%);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    
+}
+

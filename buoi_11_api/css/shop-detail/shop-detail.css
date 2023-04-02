@@ -1,0 +1,8 @@
+.shop-detail-page .title{
+    margin-bottom: 2rem;
+}
+
+.shop-detail-page .title h2{
+    font-size: 1.625rem;
+    color: var(--primary-color);
+}
